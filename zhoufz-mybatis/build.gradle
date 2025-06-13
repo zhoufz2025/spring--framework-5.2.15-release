@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.zhoufz'
+version = '5.2.15.RELEASE'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.mybatis:mybatis:3.4.5'
+    implementation 'mysql:mysql-connector-java:5.1.44'
+}
+
+test {
+    useJUnitPlatform()
+}
